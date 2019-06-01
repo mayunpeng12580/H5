@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			*{
+				padding: 0;
+				margin: 0;
+				text-decoration: none;
+				font-size: 14px;
+			}
+			
+			.demo{
+				width: 346px;
+				height: 250px;
+				position: relative;
+				-webkit-perspective: 800px;
+				margin: 100px auto;
+				border: 1px solid #999;
+			}
+			
+			.word{
+				text-align: center;
+				position: absolute;
+				top: -280px;
+				-webkit-transition-duration: 0.5s;
+			}
+			
+			.image{
+				-webkit-transition-duration: 0.5s;
+				
+			}
+			
+			.demo:hover .word{
+				-webkit-transform: translateY(300px);
+			}
+			
+			.demo:hover .image{
+				-webkit-transform-origin: center bottom;
+				-webkit-transform: rotateX(80deg);
+			}
+			
+			h3{
+				font-size: 30px;
+				line-height: 35px;
+			}
+			
+			p{
+				line-height: 25px;
+			}
+			
+			a{
+				display: inline-block;
+				padding: 10px;
+				background-color: cornflowerblue;
+				color: white;
+			}
+			
+			a:hover{
+				color: #6495ED;
+				background-color: indianred;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="demo">
+			<div class="image"><img src="img/1.jpg" /></div>
+			<div class="word">
+				<h3>Your Title</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+				
+				<a href="#">Learn more</a>
+			</div>
+		</div>
+	</body>
+</html>
