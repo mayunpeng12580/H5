@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+		}	
+			
+		.box{
+			width: 400px;
+			margin: 10px auto;
+		}	
+		
+		dl{
+			margin: 10px auto;
+			width: 300px;
+			height: 80px;
+			border: 1px solid #FF3664;
+			border-left:3px #FD3563 solid;
+			border-radius: 0 15px 15px 0;
+			margin: 10px;
+			-webkit-transition-duration: 0.5s;
+		}
+		
+		dl.boy{
+			border-left:3px #47D2E9 solid;
+		}
+		
+		dl dt img{
+			border-radius: 50%;
+			width: 60px;
+			height: 60px;
+			float: left;
+			margin: 10px;
+			-webkit-transition-duration: 0.5s;
+		}
+		
+		.box dl dd span{
+			display: block;
+			font-size: 20px;
+			color: #FD3563;
+			margin: 15px 0 5px 0;
+		}
+		
+		.box dl dd span:after{
+			content: "";
+			display: inline-block;
+			width: 15px;
+			height: 15px;
+			background-image: url(img/log/7.png);
+			background-size: 15px 15px;
+			margin-left: 10px;
+		}
+		
+		.box dl.boy dd span:after{
+			background-image: url(img/log/8.png);
+		}
+		
+		.box dl dd:nth-of-type(2){
+			color: #999;
+			font-size: 14px
+		}
+		
+		.box dl:hover dt img{
+			-webkit-animation-name: run;
+			-webkit-animation-duration: 2s;
+			-webkit-animation-timing-function: linear;
+			-webkit-animation-iteration-count: infinite;
+		}
+		
+		.box dl:hover{
+			width: 400px;
+			background-color: #FFD8E3;
+		}
+		
+		@-webkit-keyframes run{
+			from{
+				-webkit-transform: rotate(0deg);
+
+			}
+			to{
+				-webkit-transform: rotate(360deg);
+
+			}
+		}
+		
+			
+		</style>
+	</head>
+	<body>
+		<div class="box">
+			<dl>
+				<dt><img src="img/log/3.jpg" /></dt>
+				<dd><span>那年初夏</span></dd>
+				<dd>人生的痛苦，留则有，放则无。</dd>
+			</dl>
+			<dl  class="boy">
+				<dt><img src="img/log/4.jpg" /></dt>
+				<dd><span>人生若只是初见</span></dd>
+				<dd>向最坏处想，向最好处干。</dd>
+			</dl>
+			<dl>
+				<dt><img src="img/log/5.jpg" /></dt>
+				<dd><span>亦久亦旧</span></dd>
+				<dd>勤奋是永不贬值的财富。</dd>
+			</dl>
+			<dl  class="boy">
+				<dt><img src="img/log/6.jpg" /></dt>
+				<dd><span>张老师</span></dd>
+				<dd>人生没有如果，只有后果和结果。</dd>
+			</dl>
+			<dl  class="boy">
+				<dt><img src="img/log/9.jpg" /></dt>
+				<dd><span>帅的太过分</span></dd>
+				<dd>低头要有勇气，抬头要有底气。</dd>
+			</dl>
+			<dl>
+				<dt><img src="img/log/10.jpg" /></dt>
+				<dd><span>倩女幽魂</span></dd>
+				<dd>努力在我，评价在人。</dd>
+			</dl>
+		</div>
+		
+		
+		
+	</body>
+</html>
